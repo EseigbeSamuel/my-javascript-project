@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main_color: white;
+  --body_color: whitesmoke;
+  --color2: orangered;
+  --color3: black;
+  --text_color: cyan;
+}
+body {
+  background-color: var(--body_color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+  height: 40px;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 3px 4px var(--color3);
+}
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.logo {
+  padding-left: 5px;
+}
+.logo h1 {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.navbar {
+  position: absolute;
+  top: 40px;
+  width: 90%;
+  height: 90vh;
+  left: -110%;
+  display: flex;
+  justify-content: initial;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  gap: 30px;
+  transition: all ease-in-out 1s;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+.navbar.active {
+  left: 0%;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--main_color);
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--color2);
+}
+.banner {
+  height: 700px;
+  width: 100%;
+  /* width: 100vw; */
+  background-image: url(../images/pexels-avinash-kumar-16005007.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.banner h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+.card {
+  box-shadow: 1px 3px 5px black;
+  width: 93%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 20px;
+  border-radius: 15px;
+  background-color: var(--main_color);
+}
+.card h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.allcards {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.images img {
+  height: 170px;
+  width: 130px;
+}
+button {
+  height: 40px;
+  background: black;
+  color: whitesmoke;
+  /* margin-left: 50px; */
+  margin-top: 15px;
+  width: 150px;
+  border: 3px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 10px;
+}
+.text1 {
+  width: 80%;
+}
+@media screen and (min-width: 700px) {
+  .navbar {
+    width: 96%;
+  }
+  .navbar h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  ul {
+    gap: 7px;
+    font-size: 20px;
+  }
+
+  .banner h1 {
+    font-size: 50px;
+  }
+  .card {
+    box-shadow: 1px 3px 5px black;
+    width: 90%;
+    height: 220px;
+    padding: 16px;
+    gap: 20px;
+  }
+  .card h1 {
+    font-size: 30px;
+  }
+  .allcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
+  }
+  .images img {
+    height: 200px;
+    width: 100px;
+  }
+  button {
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 150px;
+    border: 3px solid;
+    border-radius: 10px;
+  }
+  button a {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .navbar h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  ul {
+    gap: 7px;
+    font-size: 20px;
+  }
+
+  .banner h1 {
+    font-size: 50px;
+  }
+  .card {
+    box-shadow: 1px 3px 5px black;
+    width: 90%;
+    height: 220px;
+    padding: 16px;
+    gap: 20px;
+  }
+  .card h1 {
+    font-size: 40px;
+  }
+  .allcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
+  }
+  .images img {
+    height: 200px;
+    width: 150px;
+  }
+  button {
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 200px;
+    border: 3px solid;
+    border-radius: 10px;
+  }
+  button a {
+    font-size: 30px;
+  }
+}
