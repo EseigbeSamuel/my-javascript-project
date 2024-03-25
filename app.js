@@ -3,6 +3,7 @@ const form = document.getElementById("form");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const verification = document.getElementById("verification");
+const span = document.getElementById("log");
 
 const formBody = JSON.parse(localStorage.getItem("form_body"));
 
@@ -99,4 +100,10 @@ form.addEventListener("submit", function (e) {
       window.location.href = "./login.html";
     }
   }
+});
+
+span.addEventListener("click", (e) => {
+  e.preventDefault;
+
+  window.location.href = "./login.html";
 });

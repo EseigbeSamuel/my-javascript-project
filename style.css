@@ -75,7 +75,9 @@ form button {
   margin-top: 20px;
   width: 100%;
 }
-
+span {
+  color: #3498db;
+}
 p {
   color: white;
   display: flex;
