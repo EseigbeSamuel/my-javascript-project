@@ -1,6 +1,7 @@
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
+const span = document.getElementById("sign");
 
 const formBody = JSON.parse(localStorage.getItem("form_body"));
 // if (formBody) {
@@ -55,4 +56,8 @@ form.addEventListener("submit", function (e) {
       }, 2000);
     }
   }
+});
+
+span.addEventListener("click", (e) => {
+  window.location.href = "./index.html";
 });
