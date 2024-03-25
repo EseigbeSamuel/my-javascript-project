@@ -72,6 +72,12 @@ input {
   margin-top: 20px;
   width: 100%;
 }
+p {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  color: #fff;
+}
 
 span {
   color: #3498db;

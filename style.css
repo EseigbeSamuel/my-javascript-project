@@ -79,6 +79,7 @@ span {
   color: #3498db;
 }
 p {
+  margin-top: 5px;
   color: white;
   display: flex;
   justify-content: center;
